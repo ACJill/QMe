@@ -7,7 +7,7 @@ from flask import Flask, render_template, request, jsonify
 
 # Replace 'your-aws-region' with the appropriate AWS region where your S3 bucket is located.
 s3_client = boto3.client('s3', region_name='us-east-1')
-bucket_name = 'qme-noodle-house'
+bucket_name = 'update-the-bucket-name'
 file_key = 'noodlehouse.json'
 
 # Load the GPT-Neo model
