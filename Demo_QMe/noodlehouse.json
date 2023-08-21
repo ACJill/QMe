@@ -1,0 +1,171 @@
+[
+  {
+    "category": "Appetizers",
+    "name": "Pork spring roll",
+    "description": "Crispy spring rolls filled with pork and depp-fried to golden perfection",
+    "price": 6.49,
+    "ingredients": [
+      "Carrot",
+      "Pork",
+      "Oyster sauce",
+      "gluten",
+      "Spring roll wrappers",
+      "Egg"
+    ]
+  },
+  {
+    "category": "Appetizers",
+    "name": "Shrimp spring roll",
+    "description": "Crispy spring rolls filled with shrimp and depp-fried to golden perfection",
+    "price": 6.49,
+    "ingredients": [
+      "Carrot",
+      "Shrimp",
+      "gluten",
+      "Oyster sauce",
+      "Spring roll wrappers",
+      "Egg"
+    ]
+  },
+  {
+    "category": "Appetizers",
+    "name": "Vegetable spring roll",
+    "description": "Crispy spring rolls filled with vegetables and depp-fried to golden perfection",
+    "price": 6.49,
+    "ingredients": [
+      "Carrot",
+      "Mung beans",
+      "Oyster sauce",
+      "Spring roll wrappers",
+      "gluten",
+      "Egg"
+    ]
+  },
+  {
+    "category": "Appetizers",
+    "name": "Rice paper rolls",
+    "description": "Traditional and healthy Vietnamese fresh rolls, filled with herbs, choice of protein, and crisp veggies, served with Peanut sauce.",
+    "price": 6.49,
+    "ingredients": ["Pork", "Shrimp", "Lettuce", "Vermicelli", "Peanut"]
+  },
+  {
+    "category": "Appetizers",
+    "name": "Beef kebab",
+    "description": "Savory Vietnamese beef kebab, where tender marinated beef and colorful bell peppers come together on a skewer, grilled to perfection and served with a side of sweet Thai chilli sauce.",
+    "price": 7.99,
+    "ingredients": ["Beef", "Bell pepper", "Soya sauce"]
+  },
+  {
+    "category": "Beef broth",
+    "name": "Pho noodle",
+    "description": "Pho, a comforting bowl of traditional Vietnamese beef broth, rice noodles, choice of meat or veggies, and a refreshing touch of fresh herbs and lime.",
+    "price": {
+      "small": 14.49,
+      "medium": 15.49,
+      "large": 16.49
+    },
+    "ingredients": ["Beef broth", "Fish sauce", "MSG", "Ginger", "White onions"]
+  },
+  {
+    "category": "Beef broth",
+    "name": "Chicken broth noodle",
+    "description": "A comforting bowl of chick broth, choice of noodles and protein, and a refreshing touch of fresh herbs and lime.",
+    "price": {
+      "small": 14.49,
+      "medium": 15.49,
+      "large": 16.49
+    },
+    "ingredients": ["Chicken broth", "Fish sauce", "MSG"]
+  },
+  {
+    "category": "Vermicelli",
+    "name": "Grill meat vermicelli",
+    "description": "Vietnamese bun thit nuong, choice of grilled lemongrass protein, vermicelli noodles, fresh veggies, crush peanut and a delightful fish sauce dressing",
+    "price": 18.49,
+    "ingredients": [
+      "Pork",
+      "Shrimp",
+      "Beef",
+      "gluten",
+      "Lemongrass",
+      "Peanut",
+      "Green onion"
+    ]
+  },
+  {
+    "category": "Vermicelli",
+    "name": "Spring roll vermicelli",
+    "description": "Vietnamese bun thit nuong, choice of deep fried spring rolls, vermicelli noodles, fresh veggies, crush peanut and a delightful fish sauce dressing",
+    "price": 18.49,
+    "ingredients": ["Pork", "Shrimp", "Peanut", "Green onion"]
+  },
+  {
+    "category": "Rice",
+    "name": "Grilled pork chop with steamed rice",
+    "description": "Marinated grilled pork chop, served over a bed of steaming rice, complemented by our special house-made fish sauce",
+    "price": 18.49,
+    "ingredients": [
+      "Pork chop",
+      "Lemongrass",
+      "Fish sauce",
+      "gluten",
+      "Oyster sauce",
+      "MSG"
+    ]
+  },
+  {
+    "category": "Rice",
+    "name": "Grilled pork chop, shredded pork skin, and egg quiche with steamed rice",
+    "description": "Marinated grilled pork chop, shredded pork skin, adn a slice of pork loaf topped with egg yolk, served over a bed of steaming rice, complemented by our special house-made fish sauce",
+    "price": 18.49,
+    "ingredients": [
+      "Pork chop",
+      "Egg",
+      "Lemongrass",
+      "Fish sauce",
+      "Oyster sauce",
+      "MSG"
+    ]
+  },
+  {
+    "category": "Stir-fry",
+    "name": "Pad Thai",
+    "description": "A flavorful Thai noodle dish with stir-fried rice noodles, choice of protein or mixed vegetables, bean sprouts, eggs, and a delicious blend of sweet and savory sauces, topped with crushed peanuts",
+    "price": 18.49,
+    "ingredients": [
+      "Rice noodles",
+      "Eggs",
+      "Beef",
+      "Fish sauce",
+      "Bean sprouts",
+      "Peanut"
+    ]
+  },
+  {
+    "category": "Stir-fry",
+    "name": "Crunchy egg noodles",
+    "description": "Crispy egg noodles are topped with a choice of juicy protein, and a delicious blend of brightly colored vegetables",
+    "price": 18.49,
+    "ingredients": ["Beef", "Shrimp", "Shellfish", "gluten", "Oyster sauce"]
+  },
+  {
+    "category": "Dessert",
+    "name": "Three color beans",
+    "description": "A refreshing Vietnamese dessert of ice slush, contrast of mung beans paste, soft red beans and bouncy jelly bites, topped with layers of rich coconut sauce",
+    "price": 6.99,
+    "ingredients": ["Mung beans", "Red beans", "Jelly", "Coconut cream"]
+  },
+  {
+    "category": "Dessert",
+    "name": "Deep fried banana with ice cream",
+    "description": "Deep fried bananas served with 2 scoops of ice cream, drizzled with chocolate sauce",
+    "price": 6.99,
+    "ingredients": [
+      "Banana",
+      "Ice cream",
+      "Wheat flour",
+      "Chocolate sauce",
+      "Eggs"
+    ]
+  }
+]
