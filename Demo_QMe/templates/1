@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Noodle House Menu</title>
+    <!-- Add Bootstrap CDN for basic styling -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Link to your custom CSS file using Flask's url_for function -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4">
+                <!-- Replace "https://your-bucket-name.s3.amazonaws.com/food_robot.jpg" with the actual S3 URL of the image -->
+                <img class="food-robot-img" src="{{ url_for('static', filename='food_robot.jpg') }}" alt="Food Robot">
+            </div>
+            <div class="col-md-8">
+                <div class="content">
+                    <h1>Welcome to Noodle House!</h1>
+                    <p>How can I assist you? Enter your preferences below:</p>
+                    <form id="menuForm">
+                        <div class="form-group">
+                            <label for="input_value">Enter your preference:</label>
+                            <input type="text" class="form-control" id="input_value" name="input_value" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                    <div class="mt-3" id="responseDiv">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add jQuery and Bootstrap JS CDNs for form submission and styling -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+
+    <script>
+            // Handle form submission
+        $("#menuForm").submit(function(event) {
+            event.preventDefault();
+            const inputValue = $("#input_value").val();
+            const data = { "input_value": inputValue };
+
+            fetch('/', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            })
+            .then(response => response.text())
+            .then(data => {
+                $("#responseDiv").html(data);
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        });
+    </script>
+</body>
+</html>
+

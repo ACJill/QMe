@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Noodle House Menu</title>
+    <!-- Add Bootstrap CDN for basic styling -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Welcome to Noodle House!</h1>
+        <p>How can I assist you? Enter your preferences below:</p>
+        <form id="menuForm" method="POST" action="/">	
+            <div class="form-group">
+                <label for="input_value">Enter your preference:</label>
+                <input type="text" class="form-control" id="input_value" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        <div class="mt-3" id="responseDiv"></div>
+
+</body>
+</html>
+
